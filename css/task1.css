@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+:root{
+    background-color: white;
+    font-family: "tenso","tenso_latinextreme","Helvetica","Arial",sans-serif;
+}
+section{
+    width: 710px ;
+    margin: 0 auto;
+    padding: 28px 0 10px 20px;
+    background-color: #f2f2f2;}
+section ul:first-of-type{ margin-bottom: 30px;}
+section h2{
+    width: 680px;
+    color: #531604;
+    padding-bottom: 30px;
+    font-size: 19px;
+    text-transform: capitalize;
+    background: url(../img/bg.png) repeat-x bottom;
+}
+li>h3{
+    position: relative;
+    width: 518px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    color:#ba903e;
+    text-transform: capitalize;
+}
+h3 span:first-child:after{
+    content: '';
+    margin-left: 9px;
+    position: absolute;
+    bottom: 4px;
+    display: inline-block;
+    height: 2px;
+    width: inherit;
+    background: url(../img/h2bg.png) repeat-x bottom;
+}
+h3 span:first-child{width: 85%;
+    background-color: #f2f2f2;
+    padding-right: 5px;
+    display: inline-block;
+}
+h3 span:last-child{
+    width: 10%;
+    color:#969507;
+    text-align:right;
+    z-index: 200;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    background-color:#f2f2f2; ;
+}
+section ul li li{
+    width: 540px;
+    height: 97px;
+    margin-top: 20px;
+    padding-left: 164px;
+    display: inline-block;
+    position: relative;
+}
+li>p{
+    width: 520px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+}
+section ul li li::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    width:140px;
+    height: 94px;
+    background-image: url(../img/l1.png);
+    background-color: white;
+}
+li li:hover::before{
+    transition: 2s;
+    opacity: 0.2;
+}
+li li:hover h3{color:#969507; transition: 1s;}
+li li:nth-child(2)::before{background-image: url(../img/l2.png);}
+li li:nth-child(3)::before{background-image: url(../img/l3.png);}
+li li:nth-child(4)::before{background-image: url(../img/l4.png);}
+li li:nth-child(5)::before{background-image: url(../img/l5.png);}
